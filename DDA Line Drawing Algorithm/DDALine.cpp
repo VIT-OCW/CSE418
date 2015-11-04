@@ -8,7 +8,7 @@ main()
 {
     int gDriver=DETECT,gMode;
 
-    int x1,x2,y1,y2,iColor;
+    int x1,x2,y1,y2,clr;
 
     initgraph(&gDriver,&gMode,"c:\\tc\\bgi");
     cleardevice();
@@ -54,7 +54,7 @@ void DDALine(int x1,int y1,int x2,int y2,int clr)
     y = y1;
     circle(x,y,1);
 
-    for (count=1; iCount<=steps; count++)
+    for (count=1; count<=steps; count++)
     {
         putpixel(floor(x),floor(y),clr%10);
         x -= xInc;
